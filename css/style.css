@@ -1,0 +1,123 @@
+:root{
+  --texto: #BFCFE7;
+  --botones: #525CEB;
+  --fondo: #3D3B40;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Tilt Neon", sans-serif;
+
+}
+.tilt-neon-h1 {
+    font-family: "Tilt Neon", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-variation-settings:
+      "XROT" 0,
+      "YROT" 0;
+  }
+  main{
+    color: var(--texto);
+    background-color: var(--fondo);
+  }
+  .inicio{
+    display: flex;
+    text-align: center;
+    height: calc(100vh - 52px); /*Adaptar segundo valor de calculo de height a los px del header*/
+    background-image:linear-gradient(to right top, #08080849, #29282873   ), url(https://www.apple.com/v/home/bm/images/heroes/apple-watch-series-9-anim/hero_apple_watch_series_9__x5wo4ptz2giu_large.jpg);
+    background-position: center ;
+    background-size: cover ;
+    width: 100%;  
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    color: var(--texto);
+  }
+  .inicio > h1 {
+    font-size: 70px;
+  }
+  .buscador{
+    margin-bottom: 50px;
+    height: 30vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .buscador > h2{
+    font-size: 2.5rem;
+  }
+  .buscadorProductos{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1rem ;
+  }
+  .inputBuscador{
+    height: 50px;
+    width: 500px;
+    background-color: var(--botones);
+    color: var(--texto);
+    border-radius: 25px;
+    border: solid 3px var(--texto);
+
+    padding: 0 20px;
+    font-size: 1.2rem;
+  }
+  .inputBuscador::placeholder{      
+    color: var(--texto);    
+  }
+  .botonBuscador{
+    background-color: var(--botones);
+    color: var(--texto);
+    font-size: 1.2rem;
+    border-radius: 25px;
+    border: solid 3px var(--texto);
+    height: 50px;
+    width: 100px;
+    margin: 10px;
+    transition: .3s ease all;
+  }
+  .botonBuscador:hover{
+    transform: scale(90%);
+  }
+  hr {
+    border: 4px solid #525CEB;
+    border-radius: 25px;
+    width: 80%;
+    margin: 0 auto;
+    margin-top: 40px;
+}
+.productos{
+  background-color: var(--fondo);
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+.product-wrapper{
+  display: flex;
+  justify-content: center;
+    width: 100%;
+}
+
+.product-container{
+  list-style: none;
+    margin: 0;
+    padding: 0;
+    display: grid;
+    width: 60%;
+    grid-template-columns: repeat(auto-fit,minmax(200px,1fr));
+    gap: 32px;
+}
+img {
+  border-radius: 8px;
+    width: 200px;
+    height: 300px;
+    box-shadow: 0px 0px 0px #000;
+}
+  
